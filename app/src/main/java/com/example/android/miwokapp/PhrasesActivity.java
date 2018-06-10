@@ -16,21 +16,21 @@ public class PhrasesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_phrases);
 
 
-        ArrayList<Phases> phases = new ArrayList<Phases>();
+        ArrayList<Word> phases = new ArrayList<Word>();
 
-        phases.add( new Phases("Where are you going?","minto wuksus"));
-        phases.add( new Phases("What is your name?","tinnә oyaase'nә"));
-        phases.add( new Phases("My name is...","oyaaset..."));
-        phases.add( new Phases("How are you feeling?","michәksәs?"));
-        phases.add( new Phases("I’m feeling good.","kuchi achit"));
-        phases.add( new Phases("Are you coming?","әәnәs'aa?"));
-        phases.add( new Phases("Yes, I’m coming.","hәә’ әәnәm"));
-        phases.add( new Phases("I’m coming.","әәnәm"));
-        phases.add( new Phases("Let’s go.","yoowutis"));
-        phases.add( new Phases("Come here.","әnni'nem"));
+        phases.add( new Word("Where are you going?","minto wuksus"));
+        phases.add( new Word("What is your name?","tinnә oyaase'nә"));
+        phases.add( new Word("My name is...","oyaaset..."));
+        phases.add( new Word("How are you feeling?","michәksәs?"));
+        phases.add( new Word("I’m feeling good.","kuchi achit"));
+        phases.add( new Word("Are you coming?","әәnәs'aa?"));
+        phases.add( new Word("Yes, I’m coming.","hәә’ әәnәm"));
+        phases.add( new Word("I’m coming.","әәnәm"));
+        phases.add( new Word("Let’s go.","yoowutis"));
+        phases.add( new Word("Come here.","әnni'nem"));
 
-        PhasesAdapter adapter = new PhasesAdapter(
-                this, phases);
+        WordAdapter adapter = new WordAdapter(
+                this, phases,R.color.category_phrases);
 
         // for list view
         ListView listView =
